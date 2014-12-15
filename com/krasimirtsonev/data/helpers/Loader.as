@@ -54,7 +54,7 @@ package com.krasimirtsonev.data.helpers {
 			_data = e.target.data;
 			dispatchEvent(new Event(ON_DATA_LOADED));
 		}
-		private function onDataFiledToLoad(e:IOErrorEvent):void {
+		private function onDataFailedToLoad(e:IOErrorEvent):void {
 			_failedError = e.text;
 			dispatchEvent(new Event(ON_DATA_FAILED));
 		}
